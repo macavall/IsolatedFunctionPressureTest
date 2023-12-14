@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "healthMonitor": {
+    "enabled": false
+  },
+  "logging": {
+    "fileLoggingMode": "always",
+    "logLevel": {
+      "default": "Trace",
+      "Host.Results": "Trace",
+      "Microsoft.Hosting.Lifetime": "Trace",
+      "Microsoft": "Trace",
+      "Host.Aggregator": "Trace",
+      "Function": "Trace",
+      "Host.Executor": "Trace"
+    },
+    "extensions": {
+      "http": {
+        "maxConcurrentRequests": 1,
+        "maxOutstandingRequests": 100
+      }
+    },
+    "logging": {
+      "applicationInsights": {
+        "samplingSettings": {
+          "isEnabled": true,
+          "excludedTypes": "Request"
+        }
+      }
+    }
+  }
+}
