@@ -6,13 +6,13 @@
   "logging": {
     "fileLoggingMode": "always",
     "logLevel": {
-      "default": "Trace",
-      "Host.Results": "Trace",
-      "Microsoft.Hosting.Lifetime": "Trace",
-      "Microsoft": "Trace",
-      "Host.Aggregator": "Trace",
-      "Function": "Trace",
-      "Host.Executor": "Trace"
+      "default": "Error",
+      "Host.Results": "Error",
+      "Microsoft.Hosting.Lifetime": "Error",
+      "Microsoft": "Error",
+      "Host.Aggregator": "Error",
+      "Function": "Error",
+      "Host.Executor": "Error"
     },
     "extensions": {
       "http": {
